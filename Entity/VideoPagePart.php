@@ -28,6 +28,11 @@ class VideoPagePart implements IsPagePart{
      */
     public $media;
 
+    /**
+     * @ORM\Column(type="boolean", nullable=true);
+     */
+    protected $autoplay;
+    
 
     public function __construct() {
     }
@@ -66,6 +71,16 @@ class VideoPagePart implements IsPagePart{
      */
     public function setMedia($media) {
         $this->media = $media;
+    }
+    
+    public function getAutoplay()
+    {
+        return $this->autoplay;
+    }
+    
+    public function setAutoplay($val)
+    {
+        $this->autoplay = $val;
     }
 
     public function __toString() {
