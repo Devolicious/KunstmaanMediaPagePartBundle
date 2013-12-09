@@ -12,12 +12,24 @@
             "email": "support@kunstmaan.be"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony": ">=2.3.0,<2.4.0",
-        "kunstmaan/pagepart-bundle": "self.version",
-        "kunstmaan/media-bundle": "self.version"
+        "symfony/symfony": "~2.4",
+        "kunstmaan/pagepart-bundle": "2.4.*",
+        "kunstmaan/media-bundle": "2.4.*"
+    },
+    "require-dev": {
+        "doctrine/data-fixtures": "1.0.*@dev",
+        "doctrine/doctrine-fixtures-bundle": "2.1.*@dev",
+        "friendsofsymfony/user-bundle": "dev-master",
+        "knplabs/knp-menu": "2.0.0-alpha1@dev",
+        "knplabs/knp-menu-bundle": "2.0.0-alpha1@dev",
+        "stof/doctrine-extensions-bundle": "dev-master",
+        "symfony-cmf/routing": "~1.1.0-dev",
+        "symfony-cmf/routing-bundle": "1.1.x-dev",
+        "pagerfanta/pagerfanta": "1.0.*@dev",
+        "white-october/pagerfanta-bundle": "1.0.*@dev"
     },
     "autoload": {
         "psr-0": { "Kunstmaan\\MediaPagePartBundle": "" }
